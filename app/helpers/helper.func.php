@@ -16,6 +16,6 @@ function escape($value)
 {
 
 	/** Escape the var and then return it */
-	return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+	return htmlentities($value, ENT_QUOTES, 'UTF-8');
 
 }
