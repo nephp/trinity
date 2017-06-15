@@ -5,3 +5,17 @@
  */
 
 namespace App\r7r1n17y\Framework;
+
+/**
+ * @name escape Use to escape any text so XSS
+ * attacks are prevented.
+ *
+ * @returns The same var escaped
+ */
+function escape($value)
+{
+
+	/** Escape the var and then return it */
+	return htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+
+}
