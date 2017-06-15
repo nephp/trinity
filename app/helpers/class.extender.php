@@ -23,13 +23,13 @@ abstract class ExtensionBridge {
 	 */
 	public $_this;
 
-    /**
+	/**
 	 * @name __construct Create the function that requires
 	 * all the classes called by the main class
 	 *
 	 * @returns void
 	 */
-    function __construct()
+	function __construct()
 	{
 		
 		/** Sets this to our custom var that is use to call
@@ -79,9 +79,9 @@ abstract class ExtensionBridge {
 			
 			}
 			
-        }
+		}
 		
-    }
+	}
     
 	/**
 	 * @name __call A magic method that calls any function
@@ -108,12 +108,12 @@ abstract class ExtensionBridge {
 			
 			}
 			
-        }
+		}
 		
 		/** Initiate a new runtime error and
 		 * throw a new runtime exception */
 		throw new \RuntimeException("This method {$method} doesn't exists");
 		
-    }
+	}
 
 }
