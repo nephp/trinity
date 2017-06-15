@@ -103,7 +103,9 @@ abstract class ExtensionBridge {
 			if (method_exists($ext, $method))
 			{
 				
-				
+				/** Check to see if the method exists if so
+				 * return the method so the function can
+				 * execute in the main class */
 				return call_user_method_array($method, $ext, $args);
 			
 			}
